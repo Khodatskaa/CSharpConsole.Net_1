@@ -9,7 +9,7 @@ class Program
         for (int i = 0; i < 5; i++)
         {
             Console.Write($"Enter number {i + 1}: ");
-            if (double.TryParse(Console.ReadLine(), out double userInput))
+            if (double.TryParse(Console.ReadLine(), out double userInput))          // TryParse returns true if the input is a valid number
             {
                 numbers[i] = userInput;
             }
